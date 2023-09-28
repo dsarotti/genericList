@@ -9,18 +9,24 @@ public class Main {
         }
         System.out.println("Mostrando lista de Integer");
         System.out.println(listaInt.toString());
+
+
         System.out.println("\n --------------- \n");
 
 
         //Prueba: lista de String
-        //Se añade la
         Lista<String> listaString = new Lista<>();
-        listaString.add("Primer elemento");
-        System.out.println("Mostrando elemento en el índice 0: ");
+
+        //Añadir un String y mostrarlo
+        listaString.add("Primer elemento String");
+        System.out.println("Mostrando elemento String en el índice 0: ");
         System.out.println(listaString.get(0));
+
         System.out.println("--------");
+
+        //Modificar el String y volver a mostrarlo
         System.out.println("Cambiando por el String \"Hola Mundo\"");
-        System.out.println("Mostrar elemento en el índice 0");
+        System.out.println("Mostrar elemento String en el índice 0");
         listaString.set(0, "Hola Mundo");
         System.out.println(listaString.get(0));
     }    

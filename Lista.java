@@ -22,7 +22,6 @@ public class Lista<T> {
 		NodeList<T> act = new NodeList<T>(elem); //Creamos el nuevo elemento
 		if(this.first != null) //Si la lista no está vacía
 		{
-            //Cambio: se indica que 
 			NodeList<T> last = this.first;
 			//Busca el que no tenga siguiente, es decir, el último.
 			while(last.getNext() != null)
@@ -40,7 +39,7 @@ public class Lista<T> {
 
 	/**
 		Busca un elemento dado un índice y lo devuelve.
-		
+
 		@param index: El índice del elemento a buscar empezando en 0
 	*/
 	private NodeList<T> search(int index)
